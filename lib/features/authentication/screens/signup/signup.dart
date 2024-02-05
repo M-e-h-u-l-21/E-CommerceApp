@@ -1,5 +1,6 @@
 import "package:e_commerce/common/widgets/login_signup/form_divider.dart";
 import "package:e_commerce/common/widgets/login_signup/social_buttons.dart";
+import "package:e_commerce/features/authentication/screens/signup/verify_email.dart";
 import "package:e_commerce/features/authentication/screens/signup/widgets/signup_form.dart";
 import "package:e_commerce/features/authentication/screens/signup/widgets/terms_and_conditions.dart";
 import "package:e_commerce/utils/constants/sizes.dart";
@@ -38,7 +39,7 @@ class Signup extends StatelessWidget {
               ),
 
               //Privacy Policies
-              TermsAndCondition(),
+              // TermsAndCondition(),
 
               const SizedBox(
                 height: TSizes.spaceBtwSections,
@@ -47,7 +48,7 @@ class Signup extends StatelessWidget {
               SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () => Get.to(() => VerifyEmail()),
                   child: Text(TTexts.createAccount),
                 ),
               ), //Button
